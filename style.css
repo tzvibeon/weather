@@ -1,0 +1,16 @@
+html,body{
+    background-color: #d2f3f3;
+    letter-spacing: 0.4em;
+    height: 67%;
+    font-size: 0.99em;
+}
+.container{
+    max-width: 400px;
+    
+}
+.icon{
+    position: relative;
+    border-radius: 50%;
+    top: -50px;
+    
+}
