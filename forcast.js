@@ -4,7 +4,7 @@ const key='JNAmJF2v5B75entmBlhAQWyiuxInRRs5'
 let getCurrentWeather=async(id)=>{
 let base='http://dataservice.accuweather.com/currentconditions/v1/'
  let query=`${id}?apikey=${key}`
- let res=await fetch(base+query);
+ let res=await fetch(base+query,{mode:"cors"});
  let data= await res.json();
  return data[0];
 
@@ -13,7 +13,7 @@ let base='http://dataservice.accuweather.com/currentconditions/v1/'
 let getCity= async (city)=>{
     let base='http://dataservice.accuweather.com/locations/v1/cities/search';
     let query=`?apikey=${key}&q=${city}`;
-    let res=await fetch(base+query);
+    let res=await fetch(base+query,{mode:"cors"});
     let data=await res.json();
     return data[0];
 };
